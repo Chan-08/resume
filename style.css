@@ -1,0 +1,300 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(40, 40, 89);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #000000;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Brush Script;
+  }
+  
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  } 
+  nav ul li a:hover{
+    color: yellow;
+  } 
+  
+  .main {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .main h2 {
+    color: white;
+    text-align: left;
+  }
+  
+  .main p {
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+  }
+  .main h3 {
+    color: lightgray;
+    text-align: left;
+  }
+
+  .intro {
+    width: 100%;
+    
+  }
+  .intro h1 {
+    color: white;
+    
+  }
+  .intro h1:hover{
+    text-shadow: 21px 7px 13px #8c8c8c;
+  }
+  .intro h2 {
+    text-align: left;
+    margin-left: 30px;
+    color:lightslategray;
+  }
+  .intro p {
+    color: white;
+  }
+  /* About section styles */
+  .box {
+    color: white;
+    padding: 20px;
+    margin: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .box p {
+    
+    color: white;
+  }
+  .box:hover{
+    background-color: rgb(82, 82, 82);
+  }
+  .box p:hover{
+    color: white;
+
+  }
+
+  .skills {
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  .skills h4 {
+    margin: 5px;
+  }
+  .projects {
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  /* Version control tool section styles */
+  .version {
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  
+  /* Contact section styles */
+  .Contact {
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  .Contact h3 {
+    margin: 5px;
+    text-align: left;
+
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #302340;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer h2 {
+    color: white;
+  }
+  
+  .footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the table header (labels) */
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style the table data (content) */
+td {
+  text-align: left;
+  padding: 8px;
+  color: lightgrey;
+}
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 600px) {
+    nav ul li a {
+      display: none; /* Hide navbar on small screens */
+    }
+   .box {
+    margin: 20px;
+   }
+    .main h1 {
+      font-size: 28px; /* Decrease font size on smaller screens */
+    }
+  }
+.download {
+  text-align: center;
+}
+.download button {
+  background-color: #565656;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.download button:hover{
+  background-color: #ffffff;
+  color: #565656;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%); /* Start from the left */
+  }
+  to {
+    transform: translateX(0); /* Move to the original position */
+  }
+}
+@keyframes slide {
+  from {
+    transform: translatey(100%);
+  }
+  to {
+    transform: translatey(0);
+  }
+}
+/* Apply the animation to an element */
+.main h2,.box p {
+  animation: slideIn 1.0s ease-in-out; /* Use your desired animation duration and timing function */
+}
+.main h3,table,.box,.download {
+  animation: slide 1.0s ease-in-out;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+  border: 4px solid #e6e6e6;
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+  overflow: hidden;
+  transform: translate(-8px, -16px) rotate(3deg);
+}
+
+
+.card:hover {
+  transform: none;
+  box-shadow: 0 20px 40px -10px rgba(255, 107, 107, 0.5);
+} 
+
+.card-1 {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+  border-radius: 20px;
+  border: 4px solid #e6e6e6;
+  transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
+  overflow: hidden;
+  transform: translate(-8px, -16px) rotate(3deg);
+}
+
+.card-1:hover {
+  transform: none;
+  box-shadow: 0 20px 40px -10px rgba(100, 226, 233, 0.5);
+}
+
+.product-image {
+justify-content: center;
+align-items: center;                 /* Adjust this height as needed */
+overflow: hidden;
+}
+.product-image img {
+ height: 100px;         /* Keeps the image inside the container */
+}
+
+.product-name {
+font-weight: bold;
+margin-top: 16px;
+text-align: center;
+color: #333;
+}
+
+.product-price {
+  margin-top: 16px;
+  text-align: center;
+  color: #333;
+}
