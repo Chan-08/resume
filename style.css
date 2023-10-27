@@ -1,4 +1,4 @@
-body, .box, .skills, .projects, .version, .Contact, .download, .footer {
+body, .box, .skills, .projects, .version, .Contact, .footer {
   color: white;
   padding: 20px;
   margin: 20px;
@@ -100,12 +100,12 @@ nav ul li a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 30px;
-  position: relative;
+  gap: 40px;
+  position:relative;
   margin-top: 50px;
 }
 
-.card, .card-1 {
+.card {
   width: 300px;
   background-color: rgb(184, 184, 184);
   display: flex;
@@ -118,11 +118,12 @@ nav ul li a:hover {
   transition: 0.4s ease-in-out transform, 0.4s ease-in-out box-shadow;
   overflow: hidden;
   transform: translate(-8px, -16px) rotate(3deg);
+  min-height: 100px;
 }
 
-.card:hover, .card-1:hover {
+.card:hover {
   transform: none;
-  box-shadow: 0 20px 40px -10px rgb(204, 255, 2);
+  box-shadow: 0 20px 40px -10px rgb(255, 255, 255);
 }
 
 .name, .description {
@@ -145,7 +146,9 @@ th, td {
   padding: 8px;
   color: lightgrey;
 }
-
+ .download {
+  text-align: center;
+}
 .download button {
   background-color: #565656;
   color: white;
@@ -168,6 +171,9 @@ th, td {
   background-color: #302340;
   padding: 20px;
   text-align: center;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
 
 .footer h2 {
@@ -181,11 +187,14 @@ th, td {
 }
 
 .footer a {
-  color: white;
+  color: rgb(127, 127, 127);
   text-decoration: none;
   margin: 0 10px;
 }
 
+.footer a:hover{
+  color: white;
+}
 /* Animation */
 
 @keyframes slideIn {
