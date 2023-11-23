@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chandrakumar</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pngwing.com.png" type="image/x-icon">
+    
     <script src="https://kit.fontawesome.com/c2e2005f03.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -58,8 +60,15 @@
 </div>
 
 <div class="version">
-    <h2>Version control tool</h2>
-    <div class="version-name">GitHub</div>
+    <form name="reg" onsubmit="return Form()" method="post">
+        <h1>Contact Form</h1>
+        <h6>Name: <input type="text" name="name"></h6>
+        <h6>E-mail: <input type="email" name="email"></h6>
+        <h6>Mobile  <input type="text" name="num"></h6>
+        <h6><input type="submit" name="submit"></h>
+    
+    </form>
+    
 </div>
 
 <div class="Contact">
@@ -99,37 +108,6 @@
     </div>
 </section>
 
-<script>
-    // Define an array of project data
-    const projects = [
-        { name: "Resume", description: "Using HTML and CSS" },
-        { name: "Spotify", description: "Cloned version of Spotify" },
-        { name: "E-com", description: "Model of an e-commerce webpage" },
-        { name: "Restaurant", description: "Webpage to display a restaurant" }
-    ];
-
-    // Populate project cards
-    const cardsContainer = document.querySelector(".cards-container");
-    projects.forEach((project) => {
-        const card = document.createElement("div");
-        card.classList.add("card");
-        card.innerHTML = `
-            <div class="name">${project.name}</div>
-            <div class="description">${project.description}</div>
-        `;
-        cardsContainer.appendChild(card);
-    });
-
-    // Define an array of programming skills
-    const programmingSkills = ["Java", "Python", "C++", "JavaScript"];
-
-    // Populate programming skills
-    const skillsList = document.querySelector(".skills-list");
-    programmingSkills.forEach((skill) => {
-        const skillElement = document.createElement("h3");
-        skillElement.textContent = skill;
-        skillsList.appendChild(skillElement);
-    });
-</script>
+<script src="res.js"></script>
 </body>
 </html>
