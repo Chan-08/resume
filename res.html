@@ -1,113 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandrakumar</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="pngwing.com.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
+    <!-- Bootstrap and custom styles -->
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    
+    <!-- Title and icon -->
+    <title>Chandrakumar</title>
+    <link rel="icon" href="logo.jpg" sizes="32x32" type="image/png">
+
+    <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/c2e2005f03.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<div class="in">
-    <header>
-        <div class="logo">C</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <!-- Header navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skill">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <div class="main">
-        <div class="intro">
-            <h2>HELLO</h2>
-            <h2>I'M </h2>
-            <h1>CHANDRAKUMAR</h1>
-            <P>WEB DEVELOPER</P>
+    <!-- Intro section -->
+    <div class="in">
+        <h2>Hi</h2>
+        <h1>I'm CHANDRAKUMAR</h1>
+        <h4>WEB DEVELOPER</h4>
+    </div>
+
+    <!-- About section -->
+    <section1>
+        <div class="cont1">
+            <div class="cont2">
+                <!-- Profile information -->
+                <div class="profile">
+                    <div class="image">
+                        <img src="me.JPG" alt="Chan pic">
+                    </div>
+                    <div class="info">
+                        <h1>Chandrakumar</h1>
+                        <h2>Web Developer</h2>
+                        <!-- Social links -->
+                        <div class="social">
+                            <a href="https://www.instagram.com/_chandru_.08/?igsh=MWhzOTl0N3Ztd3BjMQ%3D%3D">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/chandrakumar-s-b26368242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Chan-08">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont2">
+                <!-- About me information -->
+                <div class="about">
+                    <h2>About Me</h2>
+                    <p>
+                        I'm a programmer and web developer with hands-on experience in various projects. I enjoy turning ideas into reality through coding. Well-versed in Java, Python, and JavaScript, I bring a diverse skill set to the table. Open to collaborations, I'm ready to contribute my expertise to new and exciting ventures, ensuring efficient and effective solutions for every project.
+                    </p>
+                    <!-- Buttons -->
+                    <div class="buttons">
+                        <a href="resume.pdf" class="btn" download>Resume</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </section1>
 
-<div class="box" id="about">
-    <h2 style="text-align: center;">ABOUT</h2>
-    <p>
-        🚀 As a passionate B.Tech Cyber Security student,
-        I'm on a journey to transform my web development skills into real-world solutions.
-        💻 Looking for opportunities to apply my creativity and technical expertise in a dynamic team.
-        🌐 I've honed my skills in HTML, CSS, JavaScript, and more to craft captivating web experiences.
-        🎨 Let's connect if you're searching for a dedicated and innovative web developer. 🔗 Together,
-        we can bring digital ideas to life! 🌟
-    </p>
-</div>
+    <!-- Projects section -->
+    <section id="projects" style="margin-top: 40px;">
+        <h2>PROJECTS</h2>
+        <main id="projects-container"></main>
+        <h2>PROJECTS</h2>
+    </section>
 
-<div class="projects">
-    <h2 id="projects">PROJECTS</h2>
-    <div class="cards-container">
-        <!-- JavaScript will populate project cards here -->
-    </div>
-</div>
+    <!-- Skills section -->
+    <section id="skill">
+        <h2>SKILLS</h2>
+        <div class="sk">
+            <div class="skills-container" id="programmingSkills">
+                <h5>PROGRAMMING</h5>
+            </div>
+            <div class="skills-container" id="toolsSkills">
+                <h5>TOOLS</h5>
+            </div>
+        </div>
+    </section>
 
-<div class="skills" id="skills">
-    <h2>PROGRAMMING SKILLS</h2>
-    <div class="skills-list">
-        <!-- JavaScript will populate programming skills here -->
-    </div>
-</div>
+    <!-- Contact section -->
+    <section id="contact">
+        <h2 class="section-header">Contact</h2>
+        <div class="contact-wrapper">
+            <!-- Contact form -->
+            <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <input type="hidden" name="access_key" value="11faa28c-4af3-4c9f-a7aa-056996966f37">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                    </div>
+                </div>
+                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                <button class="btn" id="submit" type="submit" value="SEND" style="width: 100%; align-content: center; margin-top: 15px;">SEND</button>
+            </form>
 
-<div class="version">
-    <form name="reg" onsubmit="return Form()" method="post">
-        <h1>Contact Form</h1>
-        <h6>Name: <input type="text" name="name"></h6>
-        <h6>E-mail: <input type="email" name="email"></h6>
-        <h6>Mobile  <input type="text" name="num"></h6>
-        <h6><input type="submit" name="submit"></h>
-    
-    </form>
-    
-</div>
+            <!-- Contact information -->
+            <div class="direct-contact-container">
+                <ul class="contact-list">
+                    <li class="list-item">
+                        <i class="fa fa-map-marker fa-2x">
+                            <span class="contact-text place">Chennai, Tamilnadu</span>
+                        </i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa fa-phone fa-2x">
+                            <span class="contact-text phone">
+                                <a href="tel:+91 8270843064" title="Give me a call">+91 8270843064</a>
+                            </span>
+                        </i>
+                    </li>
+                    <li class="list-item">
+                        <i class="fa fa-envelope fa-2x">
+                            <span class="contact-text gmail">
+                                <a href="mailto:itz.chandrakumar@gmail.com" title="Send me an email">itz.chandrakumar@gmail.com</a>
+                            </span>
+                        </i>
+                    </li>
+                </ul>
+                <hr>
+                <!-- Social media links -->
+                <ul class="social-media-list">
+                    <li><a href="https://github.com/Chan-08" target="_blank" class="contact-icon">
+                            <i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/chandrakumar-s-b26368242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="contact-icon">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/_chandru_.08/?igsh=MWhzOTl0N3Ztd3BjMQ%3D%3D" target="_blank" class="contact-icon">
+                            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="copyright">Designed & Developed by Chandrakumar</div>
+            </div>
+        </div>
+    </section>
 
-<div class="Contact">
-    <h2 id="contact">CONTACT</h2>
-    <table>
-        <tr>
-            <td><strong>Mail</strong></td>
-            <td>itz.chandrakumar@gmail.com</td>
-        </tr>
-        <tr>
-            <td><strong>Mobile</strong></td>
-            <td>8270843064</td>
-        </tr>
-        <tr>
-            <td><strong>LinkedIn</strong></td>
-            <td>Chandrakumar S</td>
-        </tr>
-    </table>
-</div>
-
-<section>
-    <div class="download">
-        <a href="resume.docx" download> <button>Download Resume</button></a>
-    </div>
-</section>
-
-<section>
-    <div class="footer">
-        <h2>Follow me on</h2>
-        <ul>
-            <icon>
-                <a href="https://instagram.com/_chandru_.08?igshid=ZDc4ODBmNjlmNQ==" class="fa-brands fa-instagram"></a>
-                <a href="https://github.com/Chan-08" class="fa-brands fa-square-github"></a>
-                <a href="https://www.linkedin.com/in/chandrakumar-s-b26368242" class="fa-brands fa-linkedin-in"></a>
-            </icon>
-        </ul>
-    </div>
-</section>
-
-<script src="res.js"></script>
+    <!-- Scripts -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+    <script src="res.js"></script>
 </body>
+
 </html>
