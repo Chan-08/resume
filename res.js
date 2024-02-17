@@ -49,25 +49,25 @@ const projects = [
   {
       name: 'Project 1',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam?',
-      imageUrl: 'logo.jpg',
+      imageUrl: 'logo (1).webp',
       githubLink: 'https://github.com/Chan-08'
   },
   {
       name: 'Project 2',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam?',
-      imageUrl: 'logo.jpg',
+      imageUrl: 'logo (1).webp',
       githubLink: 'https://github.com/Chan-08'
   },
   {
       name: 'Project 3',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam?',
-      imageUrl: 'logo.jpg',
+      imageUrl: 'logo (1).webp',
       githubLink: 'https://github.com/Chan-08'
   },
   {
       name: 'Project 4',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, laboriosam?',
-      imageUrl: 'logo.jpg',
+      imageUrl: 'logo (1).webp',
       githubLink: 'https://github.com/Chan-08'
   }
 ];
